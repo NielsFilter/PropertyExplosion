@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyRefactoring", "PropertyRefactoring\PropertyRefactoring\PropertyRefactoring.csproj", "{548D8B3D-3A92-479F-9029-685C2991E571}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyRefactoring.Vsix", "PropertyRefactoring\PropertyRefactoring.Vsix\PropertyRefactoring.Vsix.csproj", "{BE603920-937B-44EE-9758-34F74625CCE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{548D8B3D-3A92-479F-9029-685C2991E571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{548D8B3D-3A92-479F-9029-685C2991E571}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{548D8B3D-3A92-479F-9029-685C2991E571}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{548D8B3D-3A92-479F-9029-685C2991E571}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE603920-937B-44EE-9758-34F74625CCE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE603920-937B-44EE-9758-34F74625CCE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE603920-937B-44EE-9758-34F74625CCE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE603920-937B-44EE-9758-34F74625CCE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
