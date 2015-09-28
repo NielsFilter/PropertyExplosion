@@ -38,7 +38,7 @@ namespace PropertyRefactoring
             }
             else
             {
-                var implodeAction = CodeAction.Create("Implode Property", c => ImplodePropertyAsync(context.Document, propertyDeclaration, c));
+                var implodeAction = CodeAction.Create("Crunch Property", c => ImplodePropertyAsync(context.Document, propertyDeclaration, c));
                 context.RegisterRefactoring(implodeAction);
             }
         }
