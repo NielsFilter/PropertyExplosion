@@ -5,8 +5,8 @@
     <DisplayName>Property Explosion</DisplayName>
     <Description xml:space="preserve">This is a refactoring tool for your properties which will explode Auto Properties or collapse Full Properties. Handle with care as this this is HOT!</Description>
     <Icon>Explosion.PNG</Icon>
-    <PreviewImage>Explosion.PNG</PreviewImage>
-    <Tags>Property Refator Explode Collapse Explosion Niels Filter</Tags>
+    <PreviewImage>ExplosionPreview.PNG</PreviewImage>
+    <Tags>Property,Refator,Explode,Collapse,Crunch,Niels,Filter,Roslyn</Tags>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[14.0,15.0)" />
