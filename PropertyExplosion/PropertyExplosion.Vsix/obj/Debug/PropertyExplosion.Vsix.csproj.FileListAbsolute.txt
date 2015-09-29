@@ -8,3 +8,13 @@ c:\users\nfilter\documents\visual studio 2015\Projects\PropertyExplosion\Propert
 c:\users\nfilter\documents\visual studio 2015\Projects\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\obj\Debug\extension.vsixmanifest
 c:\users\nfilter\documents\visual studio 2015\Projects\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\bin\Debug\Explosion.PNG
 c:\users\nfilter\documents\visual studio 2015\Projects\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\bin\Debug\ExplosionPreview.PNG
+C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\bin\Debug\Explosion.PNG
+C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\bin\Debug\ExplosionPreview.PNG
+C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\bin\Debug\PropertyExplosion.vsix
+C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\bin\Debug\extension.vsixmanifest
+C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\bin\Debug\PropertyExplosion.dll
+C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\bin\Debug\PropertyExplosion.pdb
+C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\obj\Debug\PropertyExplosion.Vsix.csprojResolveAssemblyReference.cache
+C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\obj\Debug\PropertyExplosion.dll
+C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\obj\Debug\PropertyExplosion.pdb
+C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\obj\Debug\extension.vsixmanifest
