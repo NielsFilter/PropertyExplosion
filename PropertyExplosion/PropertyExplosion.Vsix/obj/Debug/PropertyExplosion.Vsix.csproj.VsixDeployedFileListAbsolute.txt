@@ -1,0 +1,5 @@
+C:\Users\nfilter\AppData\Local\Microsoft\VisualStudio\14.0Roslyn\Extensions\NFilter\PropertyExplosion.Vsix\1.0\\PropertyExplosion.dll
+C:\Users\nfilter\AppData\Local\Microsoft\VisualStudio\14.0Roslyn\Extensions\NFilter\PropertyExplosion.Vsix\1.0\\extension.vsixmanifest
+C:\Users\nfilter\AppData\Local\Microsoft\VisualStudio\14.0Roslyn\Extensions\NFilter\PropertyExplosion.Vsix\1.0\\PropertyExplosion.pdb
+C:\Users\nfilter\AppData\Local\Microsoft\VisualStudio\14.0Roslyn\Extensions\NFilter\PropertyExplosion.Vsix\1.0\\Explosion.PNG
+C:\Users\nfilter\AppData\Local\Microsoft\VisualStudio\14.0Roslyn\Extensions\NFilter\PropertyExplosion.Vsix\1.0\\ExplosionPreview.PNG

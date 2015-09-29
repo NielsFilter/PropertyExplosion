@@ -8,19 +8,15 @@ using System.Threading.Tasks;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Formatting;
 
-namespace PropertyRefactoring
+namespace PropertyExplosion.SyntaxRewriters
 {
     public class PropertyExploder : CSharpSyntaxRewriter
     {
-        private SemanticModel _semanticModel;
-        private SyntaxNode _propertyParent;
-        private PropertyDeclarationSyntax _autoProperty;
-
-        public PropertyExploder(SemanticModel semanticModel, SyntaxNode propertyParent, PropertyDeclarationSyntax autoProperty)
+        private readonly SyntaxNode _propertyParent;
+        private readonly PropertyDeclarationSyntax _autoProperty;
+                
+        public PropertyExploder(SyntaxNode propertyParent, PropertyDeclarationSyntax autoProperty)
         {
-            //this._root = root;
-            //   this._vistor = new Visitor(autoProperty);
-            this._semanticModel = semanticModel;
             this._propertyParent = propertyParent;
             this._autoProperty = autoProperty;
         }

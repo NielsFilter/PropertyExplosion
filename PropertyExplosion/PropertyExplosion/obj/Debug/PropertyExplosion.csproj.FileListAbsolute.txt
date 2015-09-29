@@ -1,0 +1,4 @@
+c:\users\nfilter\documents\visual studio 2015\Projects\PropertyExplosion\PropertyExplosion\PropertyExplosion\bin\Debug\PropertyExplosion.dll
+c:\users\nfilter\documents\visual studio 2015\Projects\PropertyExplosion\PropertyExplosion\PropertyExplosion\bin\Debug\PropertyExplosion.pdb
+c:\users\nfilter\documents\visual studio 2015\Projects\PropertyExplosion\PropertyExplosion\PropertyExplosion\obj\Debug\PropertyExplosion.dll
+c:\users\nfilter\documents\visual studio 2015\Projects\PropertyExplosion\PropertyExplosion\PropertyExplosion\obj\Debug\PropertyExplosion.pdb

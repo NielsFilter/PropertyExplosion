@@ -8,19 +8,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PropertyRefactoring
+namespace PropertyExplosion.SyntaxRewriters
 {
     public class PropertyCollapser : CSharpSyntaxRewriter
     {
-        private readonly SemanticModel semanticModel;
-        private readonly ISymbol backingField;
-        private readonly PropertyDeclarationSyntax property;
+        private readonly SemanticModel _semanticModel;
+        private readonly ISymbol _backingField;
+        private readonly PropertyDeclarationSyntax _fullProperty;
 
         public PropertyCollapser(SemanticModel semanticModel, ISymbol backingField, PropertyDeclarationSyntax property)
         {
-            this.semanticModel = semanticModel;
-            this.backingField = backingField;
-            this.property = property;
+            this._semanticModel = semanticModel;
+            this._backingField = backingField;
+            this._fullProperty = property;
         }
 
         public override SyntaxNode VisitFieldDeclaration(FieldDeclarationSyntax field)
@@ -29,7 +29,7 @@ namespace PropertyRefactoring
             if (field.Declaration.Variables.Count == 1)
             {
                 var variable = field.Declaration.Variables.First();
-                if (object.Equals(semanticModel.GetDeclaredSymbol(variable), backingField))
+                if (object.Equals(_semanticModel.GetDeclaredSymbol(variable), this._backingField))
                 {
                     return null;
                 }
@@ -40,14 +40,14 @@ namespace PropertyRefactoring
 
         public override SyntaxNode VisitPropertyDeclaration(PropertyDeclarationSyntax propertyDeclaration)
         {
-            if (propertyDeclaration == property)
+            if (propertyDeclaration == this._fullProperty)
             {
                 // Produce the new property.
                 var emptyGetter = SyntaxFactory.AccessorDeclaration(SyntaxKind.GetAccessorDeclaration).WithSemicolonToken(SyntaxFactory.Token(SyntaxKind.SemicolonToken));
                 var emptySetter = SyntaxFactory.AccessorDeclaration(SyntaxKind.SetAccessorDeclaration).WithSemicolonToken(SyntaxFactory.Token(SyntaxKind.SemicolonToken));
 
                 // Create a new auto property (without a body)
-                var newProperty = property.WithAccessorList(
+                var newProperty = _fullProperty.WithAccessorList(
                         SyntaxFactory.AccessorList(
                             SyntaxFactory.List(new[] { emptyGetter, emptySetter })));
 
