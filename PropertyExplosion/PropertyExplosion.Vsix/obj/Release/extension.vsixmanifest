@@ -7,8 +7,8 @@
     <PreviewImage>ExplosionPreview.PNG</PreviewImage>
     <Tags>Property,Refactor,Explode,Collapse,Crunch,Explosion,Niels,Filter,Auto-Property,Full-Property</Tags>
   </Metadata>
-  <Dependencies>
-    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[3.5,)" />
-  </Dependencies>
+  <Installation>
+    <InstallationTarget Version="[12.0,15.0)" Id="Microsoft.VisualStudio.Community" />
+  </Installation>
   <Assets></Assets>
 </PackageManifest>
