@@ -1,4 +1,5 @@
-c:\users\nfilter\documents\visual studio 2015\Projects\PropertyExplosion\PropertyExplosion\PropertyExplosion\bin\Debug\PropertyExplosion.dll
-c:\users\nfilter\documents\visual studio 2015\Projects\PropertyExplosion\PropertyExplosion\PropertyExplosion\bin\Debug\PropertyExplosion.pdb
-c:\users\nfilter\documents\visual studio 2015\Projects\PropertyExplosion\PropertyExplosion\PropertyExplosion\obj\Debug\PropertyExplosion.dll
-c:\users\nfilter\documents\visual studio 2015\Projects\PropertyExplosion\PropertyExplosion\PropertyExplosion\obj\Debug\PropertyExplosion.pdb
+C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion\bin\Debug\PropertyExplosion.dll
+C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion\bin\Debug\PropertyExplosion.pdb
+C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion\obj\Debug\PropertyExplosion.dll
+C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion\obj\Debug\PropertyExplosion.pdb
+C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion\obj\Debug\PropertyExplosion.csprojResolveAssemblyReference.cache

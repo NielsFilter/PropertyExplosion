@@ -34,8 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="CodeRefactoringProvider.cs" />
+    <Compile Include="PropertyHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SyntaxRewriters\PropertyCollapser.cs" />
+    <Compile Include="SyntaxRewriters\PropertyCruncher.cs" />
     <Compile Include="SyntaxRewriters\PropertyExploder.cs" />
   </ItemGroup>
   <ItemGroup>
