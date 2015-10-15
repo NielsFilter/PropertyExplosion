@@ -72,10 +72,6 @@ namespace PropertyExplosion
 
             // Get the property's backing field.
             var backingField = property.GetBackingField(semanticModel);
-            if (backingField == null)
-            {
-                return document; // No need to continue...
-            }
 
             // Call the Property Cruncher. The code refactoring happens here.
             var collapser = new PropertyCruncher(semanticModel, backingField, property);

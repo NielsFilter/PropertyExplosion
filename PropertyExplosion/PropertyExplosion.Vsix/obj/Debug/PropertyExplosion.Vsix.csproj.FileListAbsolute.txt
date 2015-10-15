@@ -8,3 +8,13 @@ C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyEx
 C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\obj\Debug\PropertyExplosion.dll
 C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\obj\Debug\PropertyExplosion.pdb
 C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\obj\Debug\extension.vsixmanifest
+C:\Tools\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\bin\Debug\Explosion.PNG
+C:\Tools\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\bin\Debug\ExplosionPreview.PNG
+C:\Tools\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\bin\Debug\PropertyExplosion.vsix
+C:\Tools\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\bin\Debug\extension.vsixmanifest
+C:\Tools\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\bin\Debug\PropertyExplosion.dll
+C:\Tools\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\bin\Debug\PropertyExplosion.pdb
+C:\Tools\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\obj\Debug\PropertyExplosion.Vsix.csprojResolveAssemblyReference.cache
+C:\Tools\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\obj\Debug\PropertyExplosion.dll
+C:\Tools\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\obj\Debug\PropertyExplosion.pdb
+C:\Tools\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion.Vsix\obj\Debug\extension.vsixmanifest

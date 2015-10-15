@@ -3,3 +3,8 @@ C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyEx
 C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion\obj\Debug\PropertyExplosion.dll
 C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion\obj\Debug\PropertyExplosion.pdb
 C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion\obj\Debug\PropertyExplosion.csprojResolveAssemblyReference.cache
+C:\Tools\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion\bin\Debug\PropertyExplosion.dll
+C:\Tools\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion\bin\Debug\PropertyExplosion.pdb
+C:\Tools\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion\obj\Debug\PropertyExplosion.csprojResolveAssemblyReference.cache
+C:\Tools\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion\obj\Debug\PropertyExplosion.dll
+C:\Tools\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion\obj\Debug\PropertyExplosion.pdb

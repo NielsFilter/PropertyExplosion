@@ -42,14 +42,17 @@ namespace PropertyExplosion.SyntaxRewriters
 
         public override SyntaxNode VisitFieldDeclaration(FieldDeclarationSyntax field)
         {
-            // Retrieve the symbol for the field
-            if (field.Declaration.Variables.Count == 1)
+            if (this._backingField != null)
             {
-                var variable = field.Declaration.Variables.First();
-                if (object.Equals(_semanticModel.GetDeclaredSymbol(variable), this._backingField))
+                // Retrieve the symbol for the field
+                if (field.Declaration.Variables.Count == 1)
                 {
-                    // We've found the backing field of the property. We don't need it anymore, so return null (means original is "replaced" by nothing)
-                    return null;
+                    var variable = field.Declaration.Variables.First();
+                    if (object.Equals(_semanticModel.GetDeclaredSymbol(variable), this._backingField))
+                    {
+                        // We've found the backing field of the property. We don't need it anymore, so return null (means original is "replaced" by nothing)
+                        return null;
+                    }
                 }
             }
 
