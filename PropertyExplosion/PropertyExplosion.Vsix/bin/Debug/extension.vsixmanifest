@@ -1,6 +1,6 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
   <Metadata>
-    <Identity Id="PropertyExplosion.Vsix.Niels Filter.2dbfb48e-c99e-469a-bfb9-73cb654be119" Version="1.2" Language="en-US" Publisher="Niels Filter" />
+    <Identity Id="PropertyExplosion.Vsix.Niels Filter.2dbfb48e-c99e-469a-bfb9-73cb654be119" Version="1.3" Language="en-US" Publisher="Niels Filter" />
     <DisplayName>Property Explosion</DisplayName>
     <Description xml:space="preserve">Handle with care as this this is HOT! This is a refactoring tool for your properties which will explode Auto Properties or collapse Full Properties.</Description>
     <Icon>Explosion.PNG</Icon>

@@ -4,6 +4,6 @@ C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyEx
 C:\Users\nfilter\Documents\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion\obj\Release\PropertyExplosion.pdb
 C:\Tools\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion\bin\Release\PropertyExplosion.dll
 C:\Tools\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion\bin\Release\PropertyExplosion.pdb
-C:\Tools\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion\obj\Release\PropertyExplosion.csprojResolveAssemblyReference.cache
 C:\Tools\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion\obj\Release\PropertyExplosion.dll
 C:\Tools\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion\obj\Release\PropertyExplosion.pdb
+C:\Tools\GitHub\PropertyExplosion\PropertyExplosion\PropertyExplosion\obj\Release\PropertyExplosion.csprojResolveAssemblyReference.cache

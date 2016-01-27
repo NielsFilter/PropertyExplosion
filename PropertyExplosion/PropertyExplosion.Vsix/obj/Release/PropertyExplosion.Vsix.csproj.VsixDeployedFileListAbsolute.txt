@@ -8,3 +8,13 @@ C:\Users\NFilter.WT\AppData\Local\Microsoft\VisualStudio\14.0Roslyn\Extensions\N
 C:\Users\NFilter.WT\AppData\Local\Microsoft\VisualStudio\14.0Roslyn\Extensions\Niels Filter\Property Explosion\1.2\\Explosion.PNG
 C:\Users\NFilter.WT\AppData\Local\Microsoft\VisualStudio\14.0Roslyn\Extensions\Niels Filter\Property Explosion\1.2\\ExplosionPreview.PNG
 C:\Users\NFilter.WT\AppData\Local\Microsoft\VisualStudio\14.0Roslyn\Extensions\Niels Filter\Property Explosion\1.2\\PropertyExplosion.pdb
+C:\Users\NFilter.WT\AppData\Local\Microsoft\VisualStudio\14.0Roslyn\Extensions\Niels Filter\Property Explosion\1.3\\PropertyExplosion.dll
+C:\Users\NFilter.WT\AppData\Local\Microsoft\VisualStudio\14.0Roslyn\Extensions\Niels Filter\Property Explosion\1.3\\extension.vsixmanifest
+C:\Users\NFilter.WT\AppData\Local\Microsoft\VisualStudio\14.0Roslyn\Extensions\Niels Filter\Property Explosion\1.3\\Explosion.PNG
+C:\Users\NFilter.WT\AppData\Local\Microsoft\VisualStudio\14.0Roslyn\Extensions\Niels Filter\Property Explosion\1.3\\ExplosionPreview.PNG
+C:\Users\NFilter.WT\AppData\Local\Microsoft\VisualStudio\14.0Roslyn\Extensions\Niels Filter\Property Explosion\1.3\\PropertyExplosion.pdb
+C:\Users\NFilter\AppData\Local\Microsoft\VisualStudio\14.0Roslyn\Extensions\Niels Filter\Property Explosion\1.3\\PropertyExplosion.dll
+C:\Users\NFilter\AppData\Local\Microsoft\VisualStudio\14.0Roslyn\Extensions\Niels Filter\Property Explosion\1.3\\extension.vsixmanifest
+C:\Users\NFilter\AppData\Local\Microsoft\VisualStudio\14.0Roslyn\Extensions\Niels Filter\Property Explosion\1.3\\Explosion.PNG
+C:\Users\NFilter\AppData\Local\Microsoft\VisualStudio\14.0Roslyn\Extensions\Niels Filter\Property Explosion\1.3\\ExplosionPreview.PNG
+C:\Users\NFilter\AppData\Local\Microsoft\VisualStudio\14.0Roslyn\Extensions\Niels Filter\Property Explosion\1.3\\PropertyExplosion.pdb

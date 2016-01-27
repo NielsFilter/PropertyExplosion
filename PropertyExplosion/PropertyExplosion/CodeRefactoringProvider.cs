@@ -33,7 +33,7 @@ namespace PropertyExplosion
             }
 
             // Check if user is on an Auto property
-            if (property.IsAutoProperty())
+            if (property.IsAutoProperty() || property.IsExpressionProperty())
             {
                 // Auto Property is selected (Get ready for EXPLOSION)
                 var explodeAction = CodeAction.Create("Explode Property...", c => ExplodePropertyAsync(root, context.Document, property, c));

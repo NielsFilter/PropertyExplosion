@@ -16,14 +16,14 @@ namespace PropertyExplosion.SyntaxRewriters
     public class PropertyExploder : CSharpSyntaxRewriter
     {
         private readonly SyntaxNode _propertyParent;
-        private readonly PropertyDeclarationSyntax _autoProperty;
+        private readonly PropertyDeclarationSyntax _crunchedProperty;
 
         #region Constructors
 
-        public PropertyExploder(SyntaxNode propertyParent, PropertyDeclarationSyntax autoProperty)
+        public PropertyExploder(SyntaxNode propertyParent, PropertyDeclarationSyntax crunchedProperty)
         {
             this._propertyParent = propertyParent;
-            this._autoProperty = autoProperty;
+            this._crunchedProperty = crunchedProperty;
         }
 
         #endregion
@@ -38,7 +38,7 @@ namespace PropertyExplosion.SyntaxRewriters
                 if (String.IsNullOrWhiteSpace(this._privateFieldName))
                 {
                     // Take the name of the property, make first letter lower case and prefix with _ e.g. "MyProperty" becomes "_myProperty".
-                    this._privateFieldName = String.Format("_{0}{1}", Char.ToLowerInvariant(this._autoProperty.Identifier.ValueText[0]), this._autoProperty.Identifier.ValueText.Substring(1));
+                    this._privateFieldName = String.Format("_{0}{1}", Char.ToLowerInvariant(this._crunchedProperty.Identifier.ValueText[0]), this._crunchedProperty.Identifier.ValueText.Substring(1));
                 }
                 return this._privateFieldName;
             }
@@ -51,16 +51,26 @@ namespace PropertyExplosion.SyntaxRewriters
             // Check each node until we find the property's parent. When  we've found it, let's add a private field to it
             if (_propertyParent.IsEquivalentTo(node))
             {
+                var variableDeclarator = SyntaxFactory.VariableDeclarator(
+                                                    SyntaxFactory.Identifier(this.PrivateFieldName));
+
+                if (_crunchedProperty.IsExpressionProperty())
+                {
+                    variableDeclarator = variableDeclarator.WithInitializer(
+                        SyntaxFactory.EqualsValueClause(
+                            SyntaxFactory.Token(SyntaxKind.EqualsToken),
+                            _crunchedProperty.ExpressionBody.Expression));
+                }
+
                 // Create the private "backing field" of the property
                 var privateField = SyntaxFactory.FieldDeclaration(
-                                        SyntaxFactory.VariableDeclaration(_autoProperty.Type, // Property Type
+                                        SyntaxFactory.VariableDeclaration(_crunchedProperty.Type, // Property Type
                                             SyntaxFactory.SeparatedList(
-                                                new[] { SyntaxFactory.VariableDeclarator(
-                                                    SyntaxFactory.Identifier(this.PrivateFieldName)) }))) // Field Name
+                                                new[] { variableDeclarator }))) // Field Name
                     .AddModifiers(SyntaxFactory.Token(SyntaxKind.PrivateKeyword)); // Modifier (always private)
 
                 // Insert the backing field just ahead of the original property
-                var newParent = node.InsertNodesBefore(_autoProperty, new[] { privateField });
+                var newParent = node.InsertNodesBefore(_crunchedProperty, new[] { privateField });
 
                 return base.Visit(newParent); // Return the new parent which replaces the original.
             }
@@ -70,22 +80,47 @@ namespace PropertyExplosion.SyntaxRewriters
         public override SyntaxNode VisitPropertyDeclaration(PropertyDeclarationSyntax property)
         {
             // Check each node until we find the property in question. When we have it, we'll replace it with a Full Property
-            if (property.IsEquivalentTo(this._autoProperty))
+            if (property.IsEquivalentTo(this._crunchedProperty))
             {
                 AccessorDeclarationSyntax getter = null;
                 AccessorDeclarationSyntax setter = null;
 
-                if (property.HasGetter()) // Check if orignial Auto Property had a getter
+                SyntaxTokenList getterModifiers = default(SyntaxTokenList);
+                SyntaxTokenList setterModifiers = default(SyntaxTokenList);
+
+                bool hasGetter = false;
+                bool hasSetter = false;
+
+                if (property.IsExpressionProperty())
+                {
+                    hasGetter = true;
+                }
+                else
+                {
+                    hasGetter = property.HasGetter();
+                    hasSetter = property.HasSetter();
+
+                    if (hasGetter)
+                    {
+                        getterModifiers = property.GetGetter().Modifiers;
+                    }
+                    if (hasSetter)
+                    {
+                        setterModifiers = property.GetSetter().Modifiers;
+                    }
+                }
+
+                if (hasGetter) // Check if original Auto Property had a getter
                 {
                     // Create a new Getter with a body, returning a private field
                     getter = SyntaxFactory.AccessorDeclaration(SyntaxKind.GetAccessorDeclaration).WithBody(
                                     SyntaxFactory.Block(
                                         SyntaxFactory.ReturnStatement(SyntaxFactory.IdentifierName(this.PrivateFieldName))) // return field e.g. return _myProperty;
                                  )
-                                 .WithModifiers(property.GetGetter().Modifiers) // Keep orignial modifiers
+                                 .WithModifiers(getterModifiers) // Keep original modifiers
                                  .WithoutTrivia();
                 }
-                if (property.HasSetter()) // Check if orignial Auto Property had a setter
+                if (hasSetter) // Check if original Auto Property had a setter
                 {
                     // Create a new Setter with a body, setter the private field
                     setter = SyntaxFactory.AccessorDeclaration(SyntaxKind.SetAccessorDeclaration).WithBody(
@@ -93,7 +128,7 @@ namespace PropertyExplosion.SyntaxRewriters
                                     SyntaxFactory.ExpressionStatement(
                                         SyntaxFactory.AssignmentExpression(SyntaxKind.SimpleAssignmentExpression, SyntaxFactory.IdentifierName(this.PrivateFieldName), SyntaxFactory.IdentifierName("value")))) // Assignment e.g. _myProperty = value
                              )
-                             .WithModifiers(property.GetSetter().Modifiers) // Keep orignial modifiers
+                             .WithModifiers(setterModifiers) // Keep original modifiers
                              .WithoutTrivia();
                 }
 
